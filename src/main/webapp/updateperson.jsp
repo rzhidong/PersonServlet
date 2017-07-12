@@ -37,11 +37,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<tbody>
 						<tr>
 							<td>学号</td>
-							<td><input type="text" maxlength="20" name="id" value="<%= person.getId() %>" /></td>
+							<td><input type="text" maxlength="20" name="id" value="<%= person.getId() %>" readonly="readonly"/></td>
 						</tr>
 						<tr>
 							<td>姓名</td>
-							<td><input type="text" maxlength="20" name="name" value="<%= person.getName() %>" /></td>
+							<td><input type="text" maxlength="20" name="name" value="<%= person.getName() %>" required="required" /></td>
 						</tr>
 						<tr>
 							<td>年龄</td>
