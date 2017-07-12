@@ -40,17 +40,17 @@
 					<tr>
 						<td>学号</td>
 						<td><input type="text" maxlength="20" name="id" 
-						placeholder="<%=person.getId()%>" readonly="readonly"></td>
+						value="<%=person.getId()%>" readonly="readonly"></td>
 					</tr>
 					<tr>
 						<td>姓名</td>
 						<td><input type="text" maxlength="20" name="name"
-						placeholder="<%=person.getName()%>" readonly="readonly" /></td>
+						value="<%=person.getName()%>" readonly="readonly" /></td>
 					</tr>
 					<tr>
 						<td>年龄</td>
 						<td><input type="number" min="0" max="150" name="age"
-						readonly="readonly" placeholder="<%= person.getAge() %>"/> </td>
+						readonly="readonly" value="<%= person.getAge() %>"/> </td>
 					</tr>
 					<tr>
 						<td>性别</td>
@@ -58,11 +58,11 @@
 						<%
 							if (person.getSex() == 1){
 						%>
-						<input type="text" maxlength="20" placeholder="男" readonly="readonly">
+						<input type="text" maxlength="20" value="男" readonly="readonly">
 						<%
 							}else{
 						%>
-						<input type="text" maxlength="20" placeholder="女" readonly="readonly">
+						<input type="text" maxlength="20" value="女" readonly="readonly">
 						<%
 							}
 						%>
@@ -71,17 +71,17 @@
 					<tr>
 						<td>专业</td>
 						<td><input type="text" maxlength="20" name="major"
-					placeholder="<%= person.getMajor() %>" readonly="readonly" /></td>
+					value="<%= person.getMajor() %>" readonly="readonly" /></td>
 					</tr>
 					<tr>
 						<td>学院</td>
-						<td><input type="text" maxlength="20" name="college" placeholder="<%= person.getCollege() %>"
+						<td><input type="text" maxlength="20" name="college" value="<%= person.getCollege() %>"
 					readonly="readonly" /></td>
 					</tr>
 					<tr>
 						<td>简介</td>
 						<td><textarea name="introduction" rows="4" 
-						readonly="readonly" placeholder="<%= person.getIntroduction() %>"></textarea></td>
+						readonly="readonly" ><%= person.getIntroduction() %></textarea></td>
 					</tr>
 				</tbody>
 			</table>

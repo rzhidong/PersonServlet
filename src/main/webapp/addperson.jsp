@@ -34,7 +34,7 @@
 		<a href="index.jsp">返回主页</a>
 		<form action="addPerson" method="post">
 			<legend><h3>addPerson</h3></legend>
-				<table border="1"  width="100%">
+				<table border="1">
 					<tbody>
 						<tr>
 							<td><label>*</label>姓名</td>
