@@ -1,0 +1,64 @@
+
+<web-app>
+  
+  
+  <filter>
+		<filter-name>CharsetFilter</filter-name>
+		<filter-class>com.filter.CharsetFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>CharsetFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+  <servlet>
+    <servlet-name>PersonHandleServlet</servlet-name>
+    <servlet-class>com.servlet.PersonHandleServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>PersonHandleServlet</servlet-name>
+    <url-pattern>/servlet/PersonHandleServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>addPerson</servlet-name>
+    <servlet-class>com.servlet.PersonHandleServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>addPerson</servlet-name>
+    <url-pattern>/addPerson</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>updatePerson</servlet-name>
+    <servlet-class>com.servlet.PersonHandleServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>updatePerson</servlet-name>
+    <url-pattern>/updatePerson</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>viewPerson</servlet-name>
+    <servlet-class>com.servlet.PersonHandleServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>viewPerson</servlet-name>
+    <url-pattern>/viewPerson</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>deletePerson</servlet-name>
+    <servlet-class>com.servlet.PersonHandleServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>deletePerson</servlet-name>
+    <url-pattern>/deletePerson</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
